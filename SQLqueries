@@ -1,0 +1,31 @@
+Show Playlists with number of Tracks:
+
+SELECT playlist.name, COUNT(*) AS tracks
+                                    FROM playlist JOIN playlist_song
+                                    ON playlist.id = playlist_song.playlistId
+                                    GROUP BY playlist.name
+
+
+
+
+Show albums with number of tracks:
+
+SELECT album.title, COUNT(*) AS tracks FROM album JOIN song ON album.id = song.album GROUP BY album.title 
+
+
+
+Show all songs with their details:
+
+SELECT result.*, band.name as ft FROM ( SELECT song.id, song.name, song.lyrics, song.length, album.release_date, album.title as album_name, band.name as band_artist FROM song JOIN album JOIN band ON song.album = album.id AND album.band = band.id ) AS result LEFT JOIN (band INNER JOIN featuring) ON result.id = featuring.songId AND band.id = featuring.bandId 
+
+Get genres for a song:
+
+SELECT genre.name FROM genre INNER JOIN genre_song INNER JOIN song ON genre_song.songId = song.id AND genre_song.genreId = genre.id WHERE song.id = i
+
+Get songs for a playlist:
+
+SELECT song.name, song.length FROM song INNER JOIN playlist_song ON song.id = playlist_song.songId WHERE playlist_song.playlistId = 2 
+
+ 
+
+
