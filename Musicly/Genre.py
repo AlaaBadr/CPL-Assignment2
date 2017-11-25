@@ -1,6 +1,7 @@
 import pymysql
+import re
 
-class Genre:
+class GenreController:
     def getGenresOfSong(self, songId):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
@@ -9,7 +10,7 @@ class Genre:
                        FROM genre INNER JOIN genre_song INNER JOIN song
                        ON genre_song.songId = song.id AND genre_song.genreId = genre.id
                        WHERE song.id = 
-                    '''+songId+";")
+                    '''+str(songId)+";")
 
         genres = cur.fetchall()
 
@@ -18,14 +19,12 @@ class Genre:
 
         return genres
 
-    def addGenre(self):
-        name = input("Enter the genre name: ")
-
+    def addGenre(self, name):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
         cur.execute(
-            "INSERT INTO `genre` (`id`, `name`) VALUES (NULL,'" + name + "');")
+            '''INSERT INTO `genre` (`id`, `name`) VALUES (NULL,"''' + name + '''");''')
 
         conn.commit()
         cur.close()
@@ -39,8 +38,30 @@ class Genre:
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
-        cur.execute("DELETE FROM `genre` WHERE `genre`.`id` = " + genreId)
+        cur.execute("DELETE FROM `genre` WHERE `genre`.`id` = '"+genreId+"';")
 
         conn.commit()
         cur.close()
         conn.close()
+
+    def findOrNew(self, genre):
+        genres = re.split("/|,", genre)
+        genreIds = []
+
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        for g in genres:
+            print(g)
+            cur.execute('''SELECT genre.id FROM genre WHERE `name` = "'''+g+'''";''')
+
+            nila = cur.fetchone()
+            if nila is None:
+                genreIds.append(self.addGenre(str(g)))
+            else:
+                genreIds.append(nila[0])
+
+        cur.close()
+        conn.close()
+
+        return genreIds

@@ -19,22 +19,11 @@ class AlbumController:
 
         return albums
 
-    def addAlbum(self):
-        bandController = BandController()
-        print(bandController.getAll())
-
-        band = input("Enter the number of the band chosen or 0 to create one: ")
-
-        if(band == "0"):
-            band = bandController.addBand()
-
-        title = input("Enter the album title: ")
-        release_date = input("Enter the playlist release date: ")
-
+    def addAlbum(self, title, bandId, release_date):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
-        cur.execute("INSERT INTO `album` (`id`, `title`, `release_date`, `band`) VALUES (NULL,'" + title + "', '" + release_date + "', '"+band+"');")
+        cur.execute('''INSERT INTO `album` (`id`, `title`, `release_date`, `band`) VALUES (NULL,"''' + title + '''", "''' + release_date + '''", "'''+str(bandId)+'''");''')
 
         conn.commit()
         cur.close()
@@ -48,8 +37,25 @@ class AlbumController:
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
-        cur.execute("DELETE FROM `album` WHERE `album`.`id` = " + albumId)
+        cur.execute("DELETE FROM `album` WHERE `album`.`id` = '"+albumId+"';")
 
         conn.commit()
         cur.close()
         conn.close()
+
+    def findOrNew(self, album, bandId, date = None):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute('''SELECT album.id FROM album WHERE `title` = "'''+album+'''" AND `band` = '''+str(bandId)+''';''')
+
+        nila = cur.fetchone()
+        if nila is None:
+            albumId = self.addAlbum(album, bandId, str(date))
+        else:
+            albumId = nila[0]
+
+        cur.close()
+        conn.close()
+
+        return albumId

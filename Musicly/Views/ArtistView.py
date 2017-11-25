@@ -1,0 +1,2 @@
+class ArtistView:
+    pass

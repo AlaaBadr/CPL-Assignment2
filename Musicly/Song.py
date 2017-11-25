@@ -1,7 +1,13 @@
+import mutagen
 import pymysql
-from pygame import *
+from mutagen.id3 import ID3
+from mutagen.id3._frames import USLT
+from mutagen import *
 
 from Musicly.Album import AlbumController
+from Musicly.Genre import GenreController
+from Musicly.Band import BandController
+
 from tkinter.filedialog import askopenfilename
 from tkinter import Tk
 
@@ -12,11 +18,11 @@ class SongController:
 
         cur.execute("SELECT playlist.description FROM playlist WHERE playlist.id = "+playlistId+";")
 
-        description = cur.fetchall()
+        description = cur.fetchone()[0]
 
         cur.execute('''SELECT result.*, band.name as ft
                        FROM (
-                       SELECT song.id, song.name, song.lyrics, song.length,
+                       SELECT song.id, song.name, song.lyrics, song.length, song.path,
                        album.release_date, album.title as album_name,
                        band.name as band_artist
                        FROM song JOIN album JOIN band JOIN playlist_song
@@ -27,8 +33,6 @@ class SongController:
                     ''')
 
         songs = cur.fetchall()
-
-        print(songs)
 
         cur.close()
         conn.close()
@@ -58,35 +62,81 @@ class SongController:
         return songs
 
     def addSong(self):
-        filename = askopenfilename()
-        print(filename)
-
-        # albumController = AlbumController()
-        # print(albumController.getAll())
-        #
-        # albumId = input("Enter the number of the album, or 0 if single song or n to create new album: ")
-        # name = input("Enter song name: ")
-        # lyrics = input("Enter lyrics of the song: ")
-        # length = input("Enter length in seconds: ")
-        #
-        # conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
-        # cur = conn.cursor()
-        #
-        # cur.execute("INSERT INTO `song` (`id`, `name`, `lyrics`, `length`, `album`) VALUES (NULL, '"+name+"', '"+lyrics+"', '"+length+"', '"+albumId+"');")
-        #
-        # conn.commit()
-        # cur.close()
-        # conn.close()
-
-    def playSong(self):
         Tk().withdraw()
-        filename = askopenfilename(initialdir="D:\\FCI\\University\\Fourth Year\\Concepts\\test")
-        print (filename)
-        mixer.init()
-        mixer.music.load(filename)
-        mixer.music.play()
-        while mixer.music.get_busy():
-            time.Clock().tick(10)
+        path = askopenfilename(initialdir="/home/alaa/Documents/MP3")
 
-s = SongController()
-s.playSong()
+        ac = AlbumController()
+        gc = GenreController()
+        bc = BandController()
+
+        var = mutagen.File(path, easy=True)
+        tags = ID3(path)
+        lyc = tags.getall("USLT")
+
+        name = var['title'][0]
+        if len(lyc) == 0:
+            lyrics = ""
+        else:
+            lyrics = lyc[0].text.replace('\"','\'')
+
+        bands = bc.findOrNew(var['artist'][0])
+        length = var.info.length
+        date = var['date'][0]
+        if var['musicbrainz_albumtype'][0] == "single":
+            albumId = ac.findOrNew(album='singles', bandId=bands[0])
+        else:
+            albumId = ac.findOrNew(album=var['album'][0], bandId=bands[0], date=date)
+        if 'genre' in tags.keys():
+            genres = gc.findOrNew(var['genre'][0])
+        else:
+            genres = []
+
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute('''INSERT INTO `song` (`id`, `name`, `lyrics`, `length`, `album`, `path`)
+                       VALUES (NULL, "'''+name+'''", "'''+lyrics+'''", "'''+str(length)+'''", "'''+str(albumId)+'''", "'''+path+'''");''')
+        songId = cur.lastrowid
+
+        bands.pop(0)
+        for b in bands:
+            cur.execute("INSERT INTO featuring (`bandId`, `songId`) VALUES ('"+str(b)+"', '"+str(songId)+"');")
+
+        for g in genres:
+            cur.execute("INSERT INTO genre_song (`songId`, `genreId`) VALUES ('"+str(songId)+"', '"+str(g)+"');")
+
+        conn.commit()
+        cur.close()
+        conn.close()
+
+        return songId
+
+    def addSongToPlaylist(self, songId, playlistId):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute("INSERT INTO playlist_song (`playlistId`, `songId`) VALUES ('"+playlistId+", '"+songId+"');")
+
+        conn.commit()
+        cur.close()
+        conn.close()
+
+    def removeSong(self, songId):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute("DELETE FROM `song` WHERE `song`.`id` = "+songId+";")
+
+        conn.commit()
+        cur.close()
+        conn.close()
+
+    def removeSongFromPlaylist(self, songId, playlistId):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute("DELETE FROM `playlist_song` WHERE `songId` = '"+songId+"' AND playlistId = '"+playlistId+"';")
+
+        conn.commit()
+        cur.close()
+        conn.close()

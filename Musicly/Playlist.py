@@ -1,4 +1,3 @@
-# import sqlite3
 import pymysql
 
 class PlaylistController:
@@ -18,14 +17,11 @@ class PlaylistController:
 
         return playlists
 
-    def addPlaylist(self):
-        name = input("Enter the playlist name: ")
-        description = input("Enter the playlist description: ")
-
+    def addPlaylist(self,name,description):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
-        cur.execute("INSERT INTO `playlist` (`id`, `name`, `description`) VALUES (NULL,'"+name+"', '"+description+"');")
+        cur.execute('''INSERT INTO `playlist` (`id`, `name`, `description`) VALUES (NULL,"'''+name+'''", "'''+description+'''");''')
 
         conn.commit()
         cur.close()
@@ -33,13 +29,13 @@ class PlaylistController:
 
         return cur.lastrowid
 
-    def removePlaylist(self):
-        playlistId = input("Enter the playlist number: ")
+    def removePlaylist(self,playlistId):
+
 
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
-        cur.execute("DELETE FROM `playlist` WHERE `playlist`.`id` = "+playlistId)
+        cur.execute("DELETE FROM `playlist` WHERE `playlist`.`id` = '"+playlistId+"';")
 
         conn.commit()
         cur.close()

@@ -1,4 +1,5 @@
 import pymysql
+import re
 
 class BandController:
     def getAll(self):
@@ -14,13 +15,11 @@ class BandController:
 
         return bands
 
-    def addBand(self):
-        name = input("Enter the band name: ")
-
+    def addBand(self, name):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
-        cur.execute("INSERT INTO `band` (`id`, `name`) VALUES (NULL, '"+name+"');")
+        cur.execute('''INSERT INTO `band` (`id`, `name`) VALUES (NULL, "'''+name+'''");''')
 
         conn.commit()
         cur.close()
@@ -34,8 +33,29 @@ class BandController:
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
-        cur.execute("DELETE FROM `band` WHERE `band`.`id` = "+bandId)
+        cur.execute("DELETE FROM `band` WHERE `band`.`id` = '"+bandId+"';")
 
         conn.commit()
         cur.close()
         conn.close()
+
+    def findOrNew(self, band):
+        bands = re.split(" feat. | and | & |feat.|and|&", band)
+        bandIds = []
+
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        for b in bands:
+            cur.execute('''SELECT band.id FROM band WHERE `name` = "'''+b+'''";''')
+
+            nila = cur.fetchone()
+            if nila is None:
+                bandIds.append(self.addBand(b))
+            else:
+                bandIds.append(nila[0])
+
+        cur.close()
+        conn.close()
+
+        return bandIds
