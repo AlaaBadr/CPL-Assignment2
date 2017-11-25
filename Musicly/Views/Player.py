@@ -12,12 +12,9 @@ class PlayerController:
         # while mixer.music.get_busy():
         #     time.Clock().tick(10)
 
-        while True:
-            choice = int(input("1. Stop"))
-            if choice == 1:
-                mixer.music.stop()
-            else:
-                break
+        choice = int(input("1. Stop"))
+        if choice == 1:
+            mixer.music.stop()
 
     def shuffle(self, songs):
         songsPaths = []
@@ -29,11 +26,25 @@ class PlayerController:
         mixer.music.play()
 
     def playAllPlaylist(self, songs):
-        mixer.init()
-        for song in songs:
-            mixer.music.queue(song[4])
+        if len(songs) == 0:
+            print("No songs")
+            return
+        for i in range(len(songs)):
+            if i == 0:
+                mixer.init()
+                mixer.music.load(songs[i][4])
+                mixer.music.play()
+            else:
+                mixer.music.queue(songs[i][4])
 
     def playAll(self, songs):
-        mixer.init()
-        for song in songs:
-            mixer.music.queue(song[0])
+        if len(songs) ==0:
+            print("No songs")
+            return
+        for i in range(len(songs)):
+            if i == 0:
+                mixer.init()
+                mixer.music.load(songs[i][0])
+                mixer.music.play()
+            else:
+                mixer.music.queue(songs[i][0])

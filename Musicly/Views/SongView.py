@@ -1,5 +1,6 @@
 from Musicly.Genre import GenreController
 from Musicly.Song import SongController
+
 from Musicly.Views.Player import PlayerController
 
 
@@ -7,7 +8,6 @@ class SongView:
     sc = SongController()
     gc = GenreController()
     player = PlayerController()
-
     def output(self, description, songs):
         print(description)
         for song in songs:

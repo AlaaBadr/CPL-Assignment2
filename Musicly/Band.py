@@ -21,8 +21,12 @@ class BandController:
 
         cur.execute("SELECT song.path FROM song JOIN album ON song.album = album.id WHERE album.band = "+str(bandId)+" ;")
 
+        songs = cur.fetchall()
+
         cur.close()
         conn.close()
+
+        return songs
 
     def addBand(self, name):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')

@@ -9,7 +9,7 @@ class ArtistView:
     def index(self):
         artists = self.bc.getAll()
         for artist in artists:
-            print(artist[1])
+            print(artist[0],"- ",artist[1])
         print()
 
         while True:

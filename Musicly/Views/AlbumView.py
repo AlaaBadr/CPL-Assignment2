@@ -8,7 +8,7 @@ class AlbumView:
     def outputAlbums(self, albums):
         print("Albums:")
         for playlist in albums:
-            print("\t*", playlist[0], "\t\t\ttracks: ", playlist[1])
+            print("\t", playlist[0],"- ",playlist[1], "\t\t\ttracks: ", playlist[2])
         print()
 
     def index(self):

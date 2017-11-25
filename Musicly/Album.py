@@ -6,7 +6,7 @@ class AlbumController:
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
-        cur.execute('''SELECT album.title, COUNT(*) AS tracks
+        cur.execute('''SELECT album.id, album.title, COUNT(*) AS tracks
                        FROM album JOIN song
                        ON album.id = song.album
                        GROUP BY album.title;
