@@ -1,5 +1,5 @@
 from Musicly.Genre import GenreController
-from Musicly.Player import PlayerController
+from Musicly.Views.Player import PlayerController
 
 
 class GenreView:

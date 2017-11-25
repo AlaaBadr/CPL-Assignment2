@@ -1,5 +1,5 @@
 from Musicly.Album import AlbumController
-from Musicly.Player import PlayerController
+from Musicly.Views.Player import PlayerController
 
 class AlbumView:
     alc = AlbumController()

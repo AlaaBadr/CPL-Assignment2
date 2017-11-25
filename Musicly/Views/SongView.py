@@ -1,6 +1,7 @@
 from Musicly.Genre import GenreController
-from Musicly.Player import PlayerController
 from Musicly.Song import SongController
+from Musicly.Views.Player import PlayerController
+
 
 class SongView:
     sc = SongController()

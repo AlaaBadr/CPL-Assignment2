@@ -1,5 +1,5 @@
 from Musicly.Band import BandController
-from Musicly.Player import PlayerController
+from Musicly.Views.Player import PlayerController
 
 
 class ArtistView:

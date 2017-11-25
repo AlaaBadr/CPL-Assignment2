@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91f6dfa2-c92b-4dcb-8968-fbc123e77ff8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Musicly/Views/GenreView.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Musicly/Player.py" afterPath="$PROJECT_DIR$/Musicly/Views/Player.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Album.py" afterPath="$PROJECT_DIR$/Musicly/Album.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Artist.py" afterPath="$PROJECT_DIR$/Musicly/Artist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Band.py" afterPath="$PROJECT_DIR$/Musicly/Band.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Genre.py" afterPath="$PROJECT_DIR$/Musicly/Genre.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Player.py" afterPath="$PROJECT_DIR$/Musicly/Player.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Song.py" afterPath="$PROJECT_DIR$/Musicly/Song.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/AlbumView.py" afterPath="$PROJECT_DIR$/Musicly/Views/AlbumView.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/ArtistView.py" afterPath="$PROJECT_DIR$/Musicly/Views/ArtistView.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/GenreView.py" afterPath="$PROJECT_DIR$/Musicly/Views/GenreView.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/SongView.py" afterPath="$PROJECT_DIR$/Musicly/Views/SongView.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/__init__.py" afterPath="$PROJECT_DIR$/Musicly/Views/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/__init__.py" afterPath="$PROJECT_DIR$/Musicly/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,42 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Musicly/Views/__init__.py">
+      <file leaf-file-name="AlbumView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Views/AlbumView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Genre.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Musicly/Genre.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1511634768867" expanded="true" signature="221:242" ph="SELECT * FRO... genre" />
-                <marker date="1511634768867" expanded="true" signature="535:635" ph="SELECT song.... song" />
-                <marker date="1511634768867" expanded="true" signature="535:636" ph="SELECT song.... song" />
-                <marker date="1511634768867" expanded="true" signature="942:1180" ph="SELECT genre... genre" />
-                <marker date="1511634768867" expanded="true" signature="1493:1560" ph="INSERT INTO `genre`... " />
-                <marker date="1511634768867" expanded="true" signature="1889:1943" ph="DELETE FROM " />
-                <marker date="1511634768867" expanded="true" signature="2307:2360" ph="SELECT genre... genre" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenreView.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Musicly/Views/GenreView.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="378">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -92,7 +54,7 @@
       <file leaf-file-name="ArtistView.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Musicly/Views/ArtistView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
+            <state relative-caret-position="180">
               <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -101,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlbumView.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Musicly/Views/AlbumView.py">
+      <file leaf-file-name="GenreView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Views/GenreView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="324">
+              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -113,11 +75,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlaylistView.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Views/Player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaylistView.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Musicly/Views/PlaylistView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="86" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="86" />
+            <state relative-caret-position="144">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -125,32 +99,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Band.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Musicly/Band.py">
+      <file leaf-file-name="SongView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Views/SongView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1511633906738" expanded="true" signature="218:238" ph="SELECT * FRO... band" />
-                <marker date="1511633906738" expanded="true" signature="525:606" ph="SELECT song.... song" />
-                <marker date="1511633906738" expanded="true" signature="525:607" ph="SELECT song.... song" />
-                <marker date="1511633906738" expanded="true" signature="525:622" ph="SELECT song.... song" />
-                <marker date="1511633906738" expanded="true" signature="849:912" ph="INSERT INTO `band`... " />
-                <marker date="1511633906738" expanded="true" signature="1238:1289" ph="DELETE FROM " />
-                <marker date="1511633906738" expanded="true" signature="1653:1704" ph="SELECT band.... band" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Musicly/Player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -328,7 +283,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Concepts-Assignment2" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Musicly/Player.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Musicly/Views/Player.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -418,7 +373,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40522876" sideWeight="0.49721116" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40522876" sideWeight="0.49721116" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -973,16 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Views/PlaylistView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="86" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Playlist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1019,12 +964,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Views/SongView.py">
+    <entry file="file://$PROJECT_DIR$/Musicly/Views/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+        <state relative-caret-position="-138">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,7 +992,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Artist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
+        <state relative-caret-position="-630">
           <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -1083,16 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Genre.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1110,29 +1045,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Views/ArtistView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Views/AlbumView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="378">
           <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1140,12 +1055,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Views/ArtistView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Views/GenreView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="324">
           <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Views/Player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Views/SongView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Views/PlaylistView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
