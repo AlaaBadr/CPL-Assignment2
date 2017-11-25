@@ -1,5 +1,5 @@
 import pymysql
-import pygame
+from pygame import *
 
 from Musicly.Album import AlbumController
 from tkinter.filedialog import askopenfilename
@@ -79,14 +79,14 @@ class SongController:
         # conn.close()
 
     def playSong(self):
-        # Tk().withdraw()
-        # filename = askopenfilename(initialdir='/media/alaa/New Volume/Mp3/')
-
-        pygame.init()
-        pygame.mixer.init()
-        pygame.mixer.music.load('/home/alaa/Cadbury.mp3')
-        pygame.mixer.music.play()
-        pygame.event.wait()
+        Tk().withdraw()
+        filename = askopenfilename(initialdir="D:\\FCI\\University\\Fourth Year\\Concepts\\test")
+        print (filename)
+        mixer.init()
+        mixer.music.load(filename)
+        mixer.music.play()
+        while mixer.music.get_busy():
+            time.Clock().tick(10)
 
 s = SongController()
 s.playSong()
