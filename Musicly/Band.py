@@ -1,6 +1,19 @@
 import pymysql
 
 class BandController:
+    def getAll(self):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute("SELECT * FROM `band`;")
+
+        bands = cur.fetchall()
+
+        cur.close()
+        conn.close()
+
+        return bands
+
     def addBand(self):
         name = input("Enter the band name: ")
 
@@ -26,13 +39,3 @@ class BandController:
         conn.commit()
         cur.close()
         conn.close()
-
-    def getAll(self):
-        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
-        cur = conn.cursor()
-
-        cur.execute("SELECT * FROM `band`;")
-        bands = cur.fetchall()
-        cur.close()
-        conn.close()
-        return bands

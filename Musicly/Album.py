@@ -1,10 +1,27 @@
 import pymysql
 from Musicly.Band import BandController
 
-class Album:
+class AlbumController:
+    def getAll(self):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute('''SELECT album.title, COUNT(*) AS tracks
+                       FROM album JOIN song
+                       ON album.id = song.album
+                       GROUP BY album.title;
+                    ''')
+
+        albums = cur.fetchall()
+
+        cur.close()
+        conn.close()
+
+        return albums
+
     def addAlbum(self):
         bandController = BandController()
-        bandController.getAll()
+        print(bandController.getAll())
 
         band = input("Enter the number of the band chosen or 0 to create one: ")
 

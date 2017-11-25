@@ -2,16 +2,15 @@
 import pymysql
 
 class PlaylistController:
-
     def getAll(self):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()
 
         cur.execute('''SELECT playlist.id, playlist.name, COUNT(playlist_song.songId) AS tracks
-                                    FROM playlist LEFT JOIN playlist_song
-                                    ON playlist.id = playlist_song.playlistId
-                                    GROUP BY playlist.name
-                                ''')
+                       FROM playlist LEFT JOIN playlist_song
+                       ON playlist.id = playlist_song.playlistId
+                       GROUP BY playlist.name
+                    ''')
         playlists = cur.fetchall()
 
         cur.close()

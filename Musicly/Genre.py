@@ -1,6 +1,23 @@
 import pymysql
 
 class Genre:
+    def getGenresOfSong(self, songId):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute('''SELECT genre.name
+                       FROM genre INNER JOIN genre_song INNER JOIN song
+                       ON genre_song.songId = song.id AND genre_song.genreId = genre.id
+                       WHERE song.id = 
+                    '''+songId+";")
+
+        genres = cur.fetchall()
+
+        cur.close()
+        conn.close()
+
+        return genres
+
     def addGenre(self):
         name = input("Enter the genre name: ")
 

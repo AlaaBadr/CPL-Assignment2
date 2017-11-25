@@ -1,23 +1,24 @@
-import sqlite3
+import pymysql
 
 class DatabaseCreator:
     def __init__(self):
-        conn = sqlite3.connect('musicly.db')
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
 
-        conn.execute('''CREATE TABLE IF NOT EXISTS `band`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `band`
                                         (
                                           id INTEGER PRIMARY KEY,
                                           name VARCHAR(100)
                                         );
                                      ''')
-        conn.execute('''CREATE TABLE IF NOT EXISTS `genre`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `genre`
                                 (
                                   id INTEGER PRIMARY KEY,
                                   name VARCHAR(100)
                                 );
                              ''')
 
-        conn.execute('''CREATE TABLE IF NOT EXISTS `artist`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `artist`
                                 (
                                   id INTEGER PRIMARY KEY,
                                   name VARCHAR(100),
@@ -26,7 +27,7 @@ class DatabaseCreator:
                              ''')
 
 
-        conn.execute('''CREATE TABLE IF NOT EXISTS `album`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `album`
                                 (
                                   id INTEGER PRIMARY KEY,
                                   title VARCHAR(100),
@@ -36,7 +37,7 @@ class DatabaseCreator:
                                 );
                              ''')
 
-        conn.execute('''CREATE TABLE IF NOT EXISTS `song` 
+        cur.execute('''CREATE TABLE IF NOT EXISTS `song` 
                         (
                           id INTEGER PRIMARY KEY,
                           name VARCHAR(100),
@@ -47,7 +48,7 @@ class DatabaseCreator:
                         );
                      ''')
 
-        conn.execute('''CREATE TABLE IF NOT EXISTS `playlist`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `playlist`
                         (
                           id INTEGER PRIMARY KEY,
                           name VARCHAR(100),
@@ -55,7 +56,7 @@ class DatabaseCreator:
                         );
                      ''')
 
-        conn.execute('''CREATE TABLE IF NOT EXISTS `featuring`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `featuring`
                         (
                           bandId INTEGER,
                           songId INTEGER,
@@ -64,7 +65,7 @@ class DatabaseCreator:
                           PRIMARY KEY(bandId,songId)
                         )
                      ''')
-        conn.execute('''CREATE TABLE IF NOT EXISTS `genre_song`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `genre_song`
                         (
                           songId INTEGER,
                           genreId INTEGER,
@@ -73,7 +74,7 @@ class DatabaseCreator:
                           PRIMARY KEY (songId,genreId)
                         )
                       ''')
-        conn.execute('''CREATE TABLE IF NOT EXISTS `playlist_song`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `playlist_song`
                                 (
                                   playlistId INTEGER,
                                   songId INTEGER,
@@ -82,7 +83,7 @@ class DatabaseCreator:
                                   PRIMARY KEY (playlistId,songId) 
                                 )
                               ''')
-        conn.execute('''CREATE TABLE IF NOT EXISTS `artist_band`
+        cur.execute('''CREATE TABLE IF NOT EXISTS `artist_band`
                                 (
                                   artistId INTEGER,
                                   bandId INTEGER,
@@ -91,5 +92,8 @@ class DatabaseCreator:
                                   PRIMARY KEY (artistId,bandId)
                                 )
                               ''')
+
+        conn.commit()
+        cur.close()
         conn.close()
 
