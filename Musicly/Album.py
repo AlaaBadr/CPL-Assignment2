@@ -19,6 +19,19 @@ class AlbumController:
 
         return albums
 
+    def getSongsOfAlbum(self, albumId):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute("SELECT `path` FROM song WHERE `album` = "+str(albumId)+";")
+
+        songs = cur.fetchall()
+
+        cur.close()
+        conn.close()
+
+        return songs
+
     def addAlbum(self, title, bandId, release_date):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()

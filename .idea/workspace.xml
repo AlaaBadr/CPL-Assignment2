@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91f6dfa2-c92b-4dcb-8968-fbc123e77ff8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Musicly/Player.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Musicly/Views/AlbumView.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Musicly/Views/ArtistView.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Musicly/Views/PlaylistView.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Musicly/Views/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Musicly/SongView.py" afterPath="$PROJECT_DIR$/Musicly/Views/SongView.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Concepts-Assignment2.iml" afterPath="$PROJECT_DIR$/.idea/Concepts-Assignment2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Musicly/Views/GenreView.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Album.py" afterPath="$PROJECT_DIR$/Musicly/Album.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Artist.py" afterPath="$PROJECT_DIR$/Musicly/Artist.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Band.py" afterPath="$PROJECT_DIR$/Musicly/Band.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Genre.py" afterPath="$PROJECT_DIR$/Musicly/Genre.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Playlist.py" afterPath="$PROJECT_DIR$/Musicly/Playlist.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Player.py" afterPath="$PROJECT_DIR$/Musicly/Player.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Song.py" afterPath="$PROJECT_DIR$/Musicly/Song.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/AlbumView.py" afterPath="$PROJECT_DIR$/Musicly/Views/AlbumView.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/ArtistView.py" afterPath="$PROJECT_DIR$/Musicly/Views/ArtistView.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/SongView.py" afterPath="$PROJECT_DIR$/Musicly/Views/SongView.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/Views/__init__.py" afterPath="$PROJECT_DIR$/Musicly/Views/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Musicly/__init__.py" afterPath="$PROJECT_DIR$/Musicly/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,10 +25,10 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CPL_Assignment2$Genre.coverage" NAME="Genre Coverage Results" MODIFIED="1511618821128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly" />
-    <SUITE FILE_PATH="coverage/CPL_Assignment2$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1511629235705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly/Views" />
+    <SUITE FILE_PATH="coverage/CPL_Assignment2$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1511633912921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly/Views" />
     <SUITE FILE_PATH="coverage/CPL_Assignment2$Database.coverage" NAME="Database Coverage Results" MODIFIED="1511435603833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly" />
     <SUITE FILE_PATH="coverage/CPL_Assignment2$Playlist.coverage" NAME="Playlist Coverage Results" MODIFIED="1511461513710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly" />
-    <SUITE FILE_PATH="coverage/CPL_Assignment2$Player.coverage" NAME="Player Coverage Results" MODIFIED="1511629474215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly" />
+    <SUITE FILE_PATH="coverage/CPL_Assignment2$Player.coverage" NAME="Player Coverage Results" MODIFIED="1511630090679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly" />
     <SUITE FILE_PATH="coverage/CPL_Assignment2$Album.coverage" NAME="Album Coverage Results" MODIFIED="1511618151128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly" />
     <SUITE FILE_PATH="coverage/CPL_Assignment2$Band.coverage" NAME="Band Coverage Results" MODIFIED="1511619164240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly" />
     <SUITE FILE_PATH="coverage/CPL_Assignment2$Song.coverage" NAME="Song Coverage Results" MODIFIED="1511623635766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Musicly" />
@@ -51,57 +49,10 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Musicly/Views/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="-138">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SongView.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Musicly/Views/SongView.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="32" column="66" lean-forward="true" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Musicly/Player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Song.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Musicly/Song.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1511628827429" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
-                <marker date="1511628827429" expanded="true" signature="761:1178" ph="SELECT song.... song" />
-                <marker date="1511628827429" expanded="true" signature="1663:2206" ph="SELECT resul... id" />
-                <marker date="1511628827429" expanded="true" signature="1749:2046" ph="SELECT song.... song" />
-                <marker date="1511628827429" expanded="true" signature="3403:3511" ph="INSERT INTO `song`... " />
-                <marker date="1511628827429" expanded="true" signature="3403:3512" ph="INSERT INTO `song`... " />
-                <marker date="1511628827429" expanded="true" signature="3715:3798" ph="INSERT INTO featuring... " />
-                <marker date="1511628827429" expanded="true" signature="3853:3938" ph="INSERT INTO genre_song... " />
-                <marker date="1511628827429" expanded="true" signature="4231:4321" ph="INSERT INTO playlist_song... " />
-                <marker date="1511628827429" expanded="true" signature="4571:4610" ph="DELETE FROM " />
-                <marker date="1511628827429" expanded="true" signature="4895:4986" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -110,14 +61,96 @@
       <file leaf-file-name="Genre.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Musicly/Genre.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1511628153139" expanded="true" signature="238:476" ph="SELECT genre... genre" />
-                <marker date="1511628153139" expanded="true" signature="789:856" ph="INSERT INTO `genre`... " />
-                <marker date="1511628153139" expanded="true" signature="1185:1239" ph="DELETE FROM " />
-                <marker date="1511628153139" expanded="true" signature="1603:1656" ph="SELECT genre... genre" />
+                <marker date="1511634768867" expanded="true" signature="221:242" ph="SELECT * FRO... genre" />
+                <marker date="1511634768867" expanded="true" signature="535:635" ph="SELECT song.... song" />
+                <marker date="1511634768867" expanded="true" signature="535:636" ph="SELECT song.... song" />
+                <marker date="1511634768867" expanded="true" signature="942:1180" ph="SELECT genre... genre" />
+                <marker date="1511634768867" expanded="true" signature="1493:1560" ph="INSERT INTO `genre`... " />
+                <marker date="1511634768867" expanded="true" signature="1889:1943" ph="DELETE FROM " />
+                <marker date="1511634768867" expanded="true" signature="2307:2360" ph="SELECT genre... genre" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenreView.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Musicly/Views/GenreView.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArtistView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Views/ArtistView.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlbumView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Views/AlbumView.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaylistView.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Views/PlaylistView.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="86" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="86" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Band.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Band.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1511633906738" expanded="true" signature="218:238" ph="SELECT * FRO... band" />
+                <marker date="1511633906738" expanded="true" signature="525:606" ph="SELECT song.... song" />
+                <marker date="1511633906738" expanded="true" signature="525:607" ph="SELECT song.... song" />
+                <marker date="1511633906738" expanded="true" signature="525:622" ph="SELECT song.... song" />
+                <marker date="1511633906738" expanded="true" signature="849:912" ph="INSERT INTO `band`... " />
+                <marker date="1511633906738" expanded="true" signature="1238:1289" ph="DELETE FROM " />
+                <marker date="1511633906738" expanded="true" signature="1653:1704" ph="SELECT band.... band" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Musicly/Player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,22 +180,23 @@
         <option value="$PROJECT_DIR$/Database.py" />
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/Musicly/Database.py" />
-        <option value="$PROJECT_DIR$/Musicly/__init__.py" />
         <option value="$PROJECT_DIR$/Musicly/SongView.py" />
-        <option value="$PROJECT_DIR$/Musicly/Artist.py" />
         <option value="$PROJECT_DIR$/Musicly/PlaylistView.py" />
         <option value="$PROJECT_DIR$/Musicly/Musicly.py" />
-        <option value="$PROJECT_DIR$/Musicly/Views/ArtistView.py" />
-        <option value="$PROJECT_DIR$/Musicly/Views/AlbumView.py" />
-        <option value="$PROJECT_DIR$/Musicly/Album.py" />
-        <option value="$PROJECT_DIR$/Musicly/Band.py" />
         <option value="$PROJECT_DIR$/Musicly/Playlist.py" />
         <option value="$PROJECT_DIR$/Musicly/Views/PlaylistView.py" />
-        <option value="$PROJECT_DIR$/Musicly/Genre.py" />
+        <option value="$PROJECT_DIR$/Musicly/Artist.py" />
+        <option value="$PROJECT_DIR$/Musicly/__init__.py" />
+        <option value="$PROJECT_DIR$/Musicly/Album.py" />
         <option value="$PROJECT_DIR$/Musicly/Song.py" />
         <option value="$PROJECT_DIR$/Musicly/Views/SongView.py" />
-        <option value="$PROJECT_DIR$/Musicly/Player.py" />
+        <option value="$PROJECT_DIR$/Musicly/Band.py" />
         <option value="$PROJECT_DIR$/Musicly/Views/__init__.py" />
+        <option value="$PROJECT_DIR$/Musicly/Genre.py" />
+        <option value="$PROJECT_DIR$/Musicly/Views/ArtistView.py" />
+        <option value="$PROJECT_DIR$/Musicly/Player.py" />
+        <option value="$PROJECT_DIR$/Musicly/Views/AlbumView.py" />
+        <option value="$PROJECT_DIR$/Musicly/Views/GenreView.py" />
       </list>
     </option>
   </component>
@@ -244,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Player">
+  <component name="RunManager" selected="Python.__init__">
     <configuration name="Band" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -344,8 +378,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Player" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Player" />
         <item index="2" class="java.lang.String" itemvalue="Python.Song" />
         <item index="3" class="java.lang.String" itemvalue="Python.Band" />
         <item index="4" class="java.lang.String" itemvalue="Python.Genre" />
@@ -381,15 +415,15 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17529881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3" sideWeight="0.50278884" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40522876" sideWeight="0.49721116" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -411,22 +445,19 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Musicly/Album.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#14#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Band.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <marker date="1511633906738" expanded="true" signature="218:238" ph="SELECT * FRO... band" />
+            <marker date="1511633906738" expanded="true" signature="525:606" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:607" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:622" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="849:912" ph="INSERT INTO `band`... " />
+            <marker date="1511633906738" expanded="true" signature="1238:1289" ph="DELETE FROM " />
+            <marker date="1511633906738" expanded="true" signature="1653:1704" ph="SELECT band.... band" />
           </folding>
         </state>
       </provider>
@@ -437,17 +468,17 @@
           <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511624070029" expanded="true" signature="240:270" ph="SELECT artis... artist" />
-            <marker date="1511624070029" expanded="true" signature="916:979" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:995" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1017" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1018" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1022" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="1412:1455" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1412:1469" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1735:1790" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1803" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1814" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="250:280" ph="SELECT artis... artist" />
+            <marker date="1511631611678" expanded="true" signature="926:989" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1005" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1027" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1028" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1032" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="1422:1465" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1422:1479" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1745:1800" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1813" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1824" ph="INSERT INTO `artist`... " />
           </folding>
         </state>
       </provider>
@@ -473,17 +504,17 @@
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511628827429" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
-            <marker date="1511628827429" expanded="true" signature="761:1178" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="1663:2206" ph="SELECT resul... id" />
-            <marker date="1511628827429" expanded="true" signature="1749:2046" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="3403:3511" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3403:3512" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3715:3798" ph="INSERT INTO featuring... " />
-            <marker date="1511628827429" expanded="true" signature="3853:3938" ph="INSERT INTO genre_song... " />
-            <marker date="1511628827429" expanded="true" signature="4231:4321" ph="INSERT INTO playlist_song... " />
-            <marker date="1511628827429" expanded="true" signature="4571:4610" ph="DELETE FROM " />
-            <marker date="1511628827429" expanded="true" signature="4895:4986" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
+            <marker date="1511633351004" expanded="true" signature="761:1178" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="1663:2217" ph="SELECT resul... id" />
+            <marker date="1511633351004" expanded="true" signature="1749:2057" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="3414:3522" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3414:3523" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3726:3809" ph="INSERT INTO featuring... " />
+            <marker date="1511633351004" expanded="true" signature="3864:3949" ph="INSERT INTO genre_song... " />
+            <marker date="1511633351004" expanded="true" signature="4242:4332" ph="INSERT INTO playlist_song... " />
+            <marker date="1511633351004" expanded="true" signature="4582:4621" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="4906:4997" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -501,7 +532,13 @@
         <state relative-caret-position="54">
           <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding>
-            <element signature="e#0#14#0" expanded="false" />
+            <marker date="1511632951893" expanded="true" signature="251:425" ph="SELECT album... album" />
+            <marker date="1511632951893" expanded="true" signature="739:778" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:779" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:798" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="1099:1243" ph="INSERT INTO `album`... " />
+            <marker date="1511632951893" expanded="true" signature="1572:1626" ph="DELETE FROM " />
+            <marker date="1511632951893" expanded="true" signature="1898:1970" ph="SELECT album... album" />
           </folding>
         </state>
       </provider>
@@ -537,6 +574,13 @@
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <marker date="1511633906738" expanded="true" signature="218:238" ph="SELECT * FRO... band" />
+            <marker date="1511633906738" expanded="true" signature="525:606" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:607" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:622" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="849:912" ph="INSERT INTO `band`... " />
+            <marker date="1511633906738" expanded="true" signature="1238:1289" ph="DELETE FROM " />
+            <marker date="1511633906738" expanded="true" signature="1653:1704" ph="SELECT band.... band" />
           </folding>
         </state>
       </provider>
@@ -547,17 +591,17 @@
           <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511624070029" expanded="true" signature="240:270" ph="SELECT artis... artist" />
-            <marker date="1511624070029" expanded="true" signature="916:979" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:995" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1017" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1018" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1022" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="1412:1455" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1412:1469" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1735:1790" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1803" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1814" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="250:280" ph="SELECT artis... artist" />
+            <marker date="1511631611678" expanded="true" signature="926:989" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1005" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1027" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1028" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1032" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="1422:1465" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1422:1479" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1745:1800" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1813" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1824" ph="INSERT INTO `artist`... " />
           </folding>
         </state>
       </provider>
@@ -576,17 +620,17 @@
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511628827429" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
-            <marker date="1511628827429" expanded="true" signature="761:1178" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="1663:2206" ph="SELECT resul... id" />
-            <marker date="1511628827429" expanded="true" signature="1749:2046" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="3403:3511" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3403:3512" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3715:3798" ph="INSERT INTO featuring... " />
-            <marker date="1511628827429" expanded="true" signature="3853:3938" ph="INSERT INTO genre_song... " />
-            <marker date="1511628827429" expanded="true" signature="4231:4321" ph="INSERT INTO playlist_song... " />
-            <marker date="1511628827429" expanded="true" signature="4571:4610" ph="DELETE FROM " />
-            <marker date="1511628827429" expanded="true" signature="4895:4986" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
+            <marker date="1511633351004" expanded="true" signature="761:1178" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="1663:2217" ph="SELECT resul... id" />
+            <marker date="1511633351004" expanded="true" signature="1749:2057" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="3414:3522" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3414:3523" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3726:3809" ph="INSERT INTO featuring... " />
+            <marker date="1511633351004" expanded="true" signature="3864:3949" ph="INSERT INTO genre_song... " />
+            <marker date="1511633351004" expanded="true" signature="4242:4332" ph="INSERT INTO playlist_song... " />
+            <marker date="1511633351004" expanded="true" signature="4582:4621" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="4906:4997" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -622,7 +666,13 @@
         <state relative-caret-position="81">
           <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding>
-            <element signature="e#0#14#0" expanded="false" />
+            <marker date="1511632951893" expanded="true" signature="251:425" ph="SELECT album... album" />
+            <marker date="1511632951893" expanded="true" signature="739:778" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:779" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:798" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="1099:1243" ph="INSERT INTO `album`... " />
+            <marker date="1511632951893" expanded="true" signature="1572:1626" ph="DELETE FROM " />
+            <marker date="1511632951893" expanded="true" signature="1898:1970" ph="SELECT album... album" />
           </folding>
         </state>
       </provider>
@@ -633,6 +683,13 @@
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <marker date="1511633906738" expanded="true" signature="218:238" ph="SELECT * FRO... band" />
+            <marker date="1511633906738" expanded="true" signature="525:606" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:607" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:622" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="849:912" ph="INSERT INTO `band`... " />
+            <marker date="1511633906738" expanded="true" signature="1238:1289" ph="DELETE FROM " />
+            <marker date="1511633906738" expanded="true" signature="1653:1704" ph="SELECT band.... band" />
           </folding>
         </state>
       </provider>
@@ -643,17 +700,17 @@
           <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511624070029" expanded="true" signature="240:270" ph="SELECT artis... artist" />
-            <marker date="1511624070029" expanded="true" signature="916:979" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:995" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1017" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1018" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1022" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="1412:1455" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1412:1469" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1735:1790" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1803" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1814" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="250:280" ph="SELECT artis... artist" />
+            <marker date="1511631611678" expanded="true" signature="926:989" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1005" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1027" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1028" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1032" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="1422:1465" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1422:1479" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1745:1800" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1813" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1824" ph="INSERT INTO `artist`... " />
           </folding>
         </state>
       </provider>
@@ -679,17 +736,17 @@
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511628827429" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
-            <marker date="1511628827429" expanded="true" signature="761:1178" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="1663:2206" ph="SELECT resul... id" />
-            <marker date="1511628827429" expanded="true" signature="1749:2046" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="3403:3511" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3403:3512" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3715:3798" ph="INSERT INTO featuring... " />
-            <marker date="1511628827429" expanded="true" signature="3853:3938" ph="INSERT INTO genre_song... " />
-            <marker date="1511628827429" expanded="true" signature="4231:4321" ph="INSERT INTO playlist_song... " />
-            <marker date="1511628827429" expanded="true" signature="4571:4610" ph="DELETE FROM " />
-            <marker date="1511628827429" expanded="true" signature="4895:4986" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
+            <marker date="1511633351004" expanded="true" signature="761:1178" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="1663:2217" ph="SELECT resul... id" />
+            <marker date="1511633351004" expanded="true" signature="1749:2057" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="3414:3522" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3414:3523" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3726:3809" ph="INSERT INTO featuring... " />
+            <marker date="1511633351004" expanded="true" signature="3864:3949" ph="INSERT INTO genre_song... " />
+            <marker date="1511633351004" expanded="true" signature="4242:4332" ph="INSERT INTO playlist_song... " />
+            <marker date="1511633351004" expanded="true" signature="4582:4621" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="4906:4997" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -709,7 +766,13 @@
         <state relative-caret-position="54">
           <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding>
-            <element signature="e#0#14#0" expanded="false" />
+            <marker date="1511632951893" expanded="true" signature="251:425" ph="SELECT album... album" />
+            <marker date="1511632951893" expanded="true" signature="739:778" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:779" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:798" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="1099:1243" ph="INSERT INTO `album`... " />
+            <marker date="1511632951893" expanded="true" signature="1572:1626" ph="DELETE FROM " />
+            <marker date="1511632951893" expanded="true" signature="1898:1970" ph="SELECT album... album" />
           </folding>
         </state>
       </provider>
@@ -735,6 +798,13 @@
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <marker date="1511633906738" expanded="true" signature="218:238" ph="SELECT * FRO... band" />
+            <marker date="1511633906738" expanded="true" signature="525:606" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:607" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:622" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="849:912" ph="INSERT INTO `band`... " />
+            <marker date="1511633906738" expanded="true" signature="1238:1289" ph="DELETE FROM " />
+            <marker date="1511633906738" expanded="true" signature="1653:1704" ph="SELECT band.... band" />
           </folding>
         </state>
       </provider>
@@ -745,17 +815,17 @@
           <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511624070029" expanded="true" signature="240:270" ph="SELECT artis... artist" />
-            <marker date="1511624070029" expanded="true" signature="916:979" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:995" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1017" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1018" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1022" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="1412:1455" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1412:1469" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1735:1790" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1803" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1814" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="250:280" ph="SELECT artis... artist" />
+            <marker date="1511631611678" expanded="true" signature="926:989" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1005" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1027" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1028" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1032" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="1422:1465" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1422:1479" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1745:1800" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1813" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1824" ph="INSERT INTO `artist`... " />
           </folding>
         </state>
       </provider>
@@ -774,17 +844,17 @@
           <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511628827429" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
-            <marker date="1511628827429" expanded="true" signature="761:1178" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="1663:2206" ph="SELECT resul... id" />
-            <marker date="1511628827429" expanded="true" signature="1749:2046" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="3403:3511" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3403:3512" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3715:3798" ph="INSERT INTO featuring... " />
-            <marker date="1511628827429" expanded="true" signature="3853:3938" ph="INSERT INTO genre_song... " />
-            <marker date="1511628827429" expanded="true" signature="4231:4321" ph="INSERT INTO playlist_song... " />
-            <marker date="1511628827429" expanded="true" signature="4571:4610" ph="DELETE FROM " />
-            <marker date="1511628827429" expanded="true" signature="4895:4986" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
+            <marker date="1511633351004" expanded="true" signature="761:1178" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="1663:2217" ph="SELECT resul... id" />
+            <marker date="1511633351004" expanded="true" signature="1749:2057" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="3414:3522" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3414:3523" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3726:3809" ph="INSERT INTO featuring... " />
+            <marker date="1511633351004" expanded="true" signature="3864:3949" ph="INSERT INTO genre_song... " />
+            <marker date="1511633351004" expanded="true" signature="4242:4332" ph="INSERT INTO playlist_song... " />
+            <marker date="1511633351004" expanded="true" signature="4582:4621" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="4906:4997" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -804,7 +874,13 @@
         <state relative-caret-position="54">
           <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding>
-            <element signature="e#0#14#0" expanded="false" />
+            <marker date="1511632951893" expanded="true" signature="251:425" ph="SELECT album... album" />
+            <marker date="1511632951893" expanded="true" signature="739:778" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:779" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:798" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="1099:1243" ph="INSERT INTO `album`... " />
+            <marker date="1511632951893" expanded="true" signature="1572:1626" ph="DELETE FROM " />
+            <marker date="1511632951893" expanded="true" signature="1898:1970" ph="SELECT album... album" />
           </folding>
         </state>
       </provider>
@@ -830,6 +906,13 @@
           <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <marker date="1511633906738" expanded="true" signature="218:238" ph="SELECT * FRO... band" />
+            <marker date="1511633906738" expanded="true" signature="525:606" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:607" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:622" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="849:912" ph="INSERT INTO `band`... " />
+            <marker date="1511633906738" expanded="true" signature="1238:1289" ph="DELETE FROM " />
+            <marker date="1511633906738" expanded="true" signature="1653:1704" ph="SELECT band.... band" />
           </folding>
         </state>
       </provider>
@@ -840,17 +923,17 @@
           <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511624070029" expanded="true" signature="240:270" ph="SELECT artis... artist" />
-            <marker date="1511624070029" expanded="true" signature="916:979" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:995" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1017" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1018" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1022" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="1412:1455" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1412:1469" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1735:1790" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1803" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1814" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="250:280" ph="SELECT artis... artist" />
+            <marker date="1511631611678" expanded="true" signature="926:989" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1005" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1027" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1028" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1032" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="1422:1465" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1422:1479" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1745:1800" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1813" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1824" ph="INSERT INTO `artist`... " />
           </folding>
         </state>
       </provider>
@@ -872,63 +955,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Musicly.py" />
-    <entry file="file://$PROJECT_DIR$/Musicly/Views/ArtistView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Album.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#14#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Artist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="32" column="123" lean-forward="false" selection-start-line="32" selection-start-column="123" selection-end-line="32" selection-end-column="123" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511624070029" expanded="true" signature="240:270" ph="SELECT artis... artist" />
-            <marker date="1511624070029" expanded="true" signature="916:979" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:995" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1017" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1018" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="916:1022" ph="INSERT INTO `artist`... " />
-            <marker date="1511624070029" expanded="true" signature="1412:1455" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1412:1469" ph="DELETE FROM " />
-            <marker date="1511624070029" expanded="true" signature="1735:1790" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1803" ph="INSERT INTO `artist_band`... " />
-            <marker date="1511624070029" expanded="true" signature="1735:1814" ph="INSERT INTO `artist`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Band.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -937,27 +963,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Views/PlaylistView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <caret line="12" column="86" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="86" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Views/AlbumView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Playlist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="306">
           <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <marker date="1511626207569" expanded="true" signature="214:458" ph="SELECT playl... playlist" />
@@ -970,67 +998,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Genre.py">
+    <entry file="file://$PROJECT_DIR$/Musicly/Song.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        <state relative-caret-position="-126">
+          <caret line="47" column="86" lean-forward="false" selection-start-line="47" selection-start-column="86" selection-end-line="47" selection-end-column="86" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511628153139" expanded="true" signature="238:476" ph="SELECT genre... genre" />
-            <marker date="1511628153139" expanded="true" signature="789:856" ph="INSERT INTO `genre`... " />
-            <marker date="1511628153139" expanded="true" signature="1185:1239" ph="DELETE FROM " />
-            <marker date="1511628153139" expanded="true" signature="1603:1656" ph="SELECT genre... genre" />
+            <marker date="1511633351004" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
+            <marker date="1511633351004" expanded="true" signature="761:1178" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="1663:2217" ph="SELECT resul... id" />
+            <marker date="1511633351004" expanded="true" signature="1749:2057" ph="SELECT song.... song" />
+            <marker date="1511633351004" expanded="true" signature="3414:3522" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3414:3523" ph="INSERT INTO `song`... " />
+            <marker date="1511633351004" expanded="true" signature="3726:3809" ph="INSERT INTO featuring... " />
+            <marker date="1511633351004" expanded="true" signature="3864:3949" ph="INSERT INTO genre_song... " />
+            <marker date="1511633351004" expanded="true" signature="4242:4332" ph="INSERT INTO playlist_song... " />
+            <marker date="1511633351004" expanded="true" signature="4582:4621" ph="DELETE FROM " />
+            <marker date="1511633351004" expanded="true" signature="4906:4997" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Views/SongView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="32" column="66" lean-forward="true" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+        <state relative-caret-position="438">
+          <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Musicly/Song.py">
+    <entry file="file://$PROJECT_DIR$/Musicly/Album.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="301">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <marker date="1511632951893" expanded="true" signature="251:425" ph="SELECT album... album" />
+            <marker date="1511632951893" expanded="true" signature="739:778" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:779" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="739:798" ph="SELECT song.... song" />
+            <marker date="1511632951893" expanded="true" signature="1099:1243" ph="INSERT INTO `album`... " />
+            <marker date="1511632951893" expanded="true" signature="1572:1626" ph="DELETE FROM " />
+            <marker date="1511632951893" expanded="true" signature="1898:1970" ph="SELECT album... album" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Artist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1511628827429" expanded="true" signature="530:592" ph="SELECT playl... playlist" />
-            <marker date="1511628827429" expanded="true" signature="761:1178" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="1663:2206" ph="SELECT resul... id" />
-            <marker date="1511628827429" expanded="true" signature="1749:2046" ph="SELECT song.... song" />
-            <marker date="1511628827429" expanded="true" signature="3403:3511" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3403:3512" ph="INSERT INTO `song`... " />
-            <marker date="1511628827429" expanded="true" signature="3715:3798" ph="INSERT INTO featuring... " />
-            <marker date="1511628827429" expanded="true" signature="3853:3938" ph="INSERT INTO genre_song... " />
-            <marker date="1511628827429" expanded="true" signature="4231:4321" ph="INSERT INTO playlist_song... " />
-            <marker date="1511628827429" expanded="true" signature="4571:4610" ph="DELETE FROM " />
-            <marker date="1511628827429" expanded="true" signature="4895:4986" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="250:280" ph="SELECT artis... artist" />
+            <marker date="1511631611678" expanded="true" signature="926:989" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1005" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1027" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1028" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="926:1032" ph="INSERT INTO `artist`... " />
+            <marker date="1511631611678" expanded="true" signature="1422:1465" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1422:1479" ph="DELETE FROM " />
+            <marker date="1511631611678" expanded="true" signature="1745:1800" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1813" ph="INSERT INTO `artist_band`... " />
+            <marker date="1511631611678" expanded="true" signature="1745:1824" ph="INSERT INTO `artist`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Band.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1511633906738" expanded="true" signature="218:238" ph="SELECT * FRO... band" />
+            <marker date="1511633906738" expanded="true" signature="525:606" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:607" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="525:622" ph="SELECT song.... song" />
+            <marker date="1511633906738" expanded="true" signature="849:912" ph="INSERT INTO `band`... " />
+            <marker date="1511633906738" expanded="true" signature="1238:1289" ph="DELETE FROM " />
+            <marker date="1511633906738" expanded="true" signature="1653:1704" ph="SELECT band.... band" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Views/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="-138">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Genre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1511634768867" expanded="true" signature="221:242" ph="SELECT * FRO... genre" />
+            <marker date="1511634768867" expanded="true" signature="535:635" ph="SELECT song.... song" />
+            <marker date="1511634768867" expanded="true" signature="535:636" ph="SELECT song.... song" />
+            <marker date="1511634768867" expanded="true" signature="942:1180" ph="SELECT genre... genre" />
+            <marker date="1511634768867" expanded="true" signature="1493:1560" ph="INSERT INTO `genre`... " />
+            <marker date="1511634768867" expanded="true" signature="1889:1943" ph="DELETE FROM " />
+            <marker date="1511634768867" expanded="true" signature="2307:2360" ph="SELECT genre... genre" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Musicly/Player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="132">
+          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Views/ArtistView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Views/AlbumView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Musicly/Views/GenreView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

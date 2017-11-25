@@ -17,7 +17,7 @@ class SongView:
 
         while True:
             self.output(description, songs)
-            choice = int(input("0. Order\t1. View Song\t2. Play Song\t3. Remove Song from Playlist\n"))
+            choice = int(input("0. Order\t1. View Song\t2. Play Song\t3.Shuffle Song\t4. Play All Playlist\t5. Remove Song from Playlist\n"))
             if choice == 0:
                 songs = self.order(songs)
             elif choice == 1:
@@ -29,8 +29,14 @@ class SongView:
                 path = [x for x in songs if x[0] == songId][0][4]
                 self.player.playSong(path)
             elif choice == 3:
+                self.player.shuffle(songs)
+            elif choice == 4:
+                self.player.playAllPlaylist(songs)
+            elif choice == 5:
                 songId = int(input("Enter song number: "))
                 self.sc.removeSongFromPlaylist(songId, playlistId)
+            else:
+                break
 
     def order(self, songs):
         print("1. Name\n2. Artist\n3. Album\n4. Release date")
@@ -66,5 +72,21 @@ class SongView:
         print("Lyrics: ", song[2])
         print()
 
+    def index(self):
+        while True:
+            songs = self.sc.getAll()
+            for song in songs:
+                print(song[0], "- ", song[1], "\t\t", song[7])
 
-
+            choice = int(input("1. Play song\t2. Add Song\t3. Remove Song"))
+            if choice == 1:
+                songId = int(input("Enter song number: "))
+                path = [x for x in songs if x[0] == songId][0][4]
+                self.player.playSong(path)
+            elif choice == 2:
+                self.sc.addSong()
+            elif choice == 3:
+                songId = int(input("Enter song number: "))
+                self.sc.removeSong(songId)
+            else:
+                break

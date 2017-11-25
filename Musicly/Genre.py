@@ -2,6 +2,32 @@ import pymysql
 import re
 
 class GenreController:
+    def getAll(self):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute('''SELECT * FROM `genre`;''')
+
+        genres = cur.fetchall()
+
+        cur.close()
+        conn.close()
+
+        return genres
+
+    def getSongsOfGenre(self, genreId):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute("SELECT song.path FROM song JOIN genre_song ON song.id = genre_song.songId WHERE genre_song.genreId = "+str(genreId)+";")
+
+        songs = cur.fetchall()
+
+        cur.close()
+        conn.close()
+
+        return songs
+
     def getGenresOfSong(self, songId):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()

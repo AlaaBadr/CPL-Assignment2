@@ -1,7 +1,7 @@
 import pymysql
 from Musicly.Band import BandController
 
-class Artist:
+class ArtistController:
     def getAll(self):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()

@@ -15,6 +15,15 @@ class BandController:
 
         return bands
 
+    def getSongsOfBand(self, bandId):
+        conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
+        cur = conn.cursor()
+
+        cur.execute("SELECT song.path FROM song JOIN album ON song.album = album.id WHERE album.band = "+str(bandId)+" ;")
+
+        cur.close()
+        conn.close()
+
     def addBand(self, name):
         conn = pymysql.connect(host='localhost', port=3307, user='root', passwd='', db='musicly')
         cur = conn.cursor()

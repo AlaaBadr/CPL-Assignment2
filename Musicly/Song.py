@@ -45,7 +45,7 @@ class SongController:
 
         cur.execute('''SELECT result.*, band.name as ft
                        FROM (
-                       SELECT song.id, song.name, song.lyrics, song.length,
+                       SELECT song.id, song.name, song.lyrics, song.length, song.path,
                        album.release_date, album.title as album_name,
                        band.name as band_artist
                        FROM song JOIN album JOIN band
